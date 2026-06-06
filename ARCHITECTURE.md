@@ -1,5 +1,5 @@
 # System Architecture Manual 📘
-### Technical Engineering Guide — Provena Cryptographic Ledger Protocol
+Technical Engineering Guide — Provena Cryptographic Ledger Protocol
 
 Provena implements a high-integrity, full-stack decentralized file indexing and ownership proving network. This document walks developers and judges through our core software design, Tatum API layer, Walrus decentralized chunk structure, and Sui Move contract behaviors.
 
@@ -40,9 +40,9 @@ Provena implements a high-integrity, full-stack decentralized file indexing and 
 Provena integrates **Tatum's Enterprise Gateway API** as its centralized RPC relay layer. Tatum provides high-throughput API endpoints to handle high-concurrency requests safely, bypassing standard public rate configurations.
 
 ### RPC Functions Used
-1. **`suix_getBalance`**: Fetches direct mist balances for connected creators to ensure gas budget feasibility before broad execution.
-2. **`sui_executeTransactionBlock`**: Signs, broadcasts, and indexes gas-estimated transactions directly onto SUI mainnet or testnet.
-3. **`sui_getTransactionBlock`**: Used at runtime inside the **Verification Portal** to trace transaction hash matching directly from Sui blockchain state.
+1. `suix_getBalance`: Fetches direct mist balances for connected creators to ensure gas budget feasibility before broad execution.
+2. `sui_executeTransactionBlock`: Signs, broadcasts, and indexes gas-estimated transactions directly onto SUI mainnet or testnet.
+3. `sui_getTransactionBlock`: Used at runtime inside the **Verification Portal** to trace transaction hash matching directly from Sui blockchain state.
 
 ### Implementation Reference
 Located in `/src/services/blockchain/tatum.ts`:
@@ -88,8 +88,8 @@ struct ProvenanceRecord has store, copy {
 ```
 
 ### Deployed Module Functions
-- **`register_asset(registry, title, sha256_hash, walrus_blob_id)`**: Binds the SHA-256 original file signature directly to the creator's wallet address. If the file SHA-256 hash already exists in the `AssetRegistry` table, the execution fails with an on-chain abort code, mitigating copyright fraud attempt instantly.
-- **`verify_asset(registry, sha256_hash)`**: Checks index table registry for record presence, returning complete ownership structures, blob IDs, and anchor timestamps.
+- `register_asset(registry, title, sha256_hash, walrus_blob_id)`: Binds the SHA-256 original file signature directly to the creator's wallet address. If the file SHA-256 hash already exists in the `AssetRegistry` table, the execution fails with an on-chain abort code, mitigating copyright fraud attempt instantly.
+- `verify_asset(registry, sha256_hash)`: Checks index table registry for record presence, returning complete ownership structures, blob IDs, and anchor timestamps.
 
 ---
 
@@ -114,4 +114,4 @@ Creator Hub               Local Browser                Walrus Node              
     |                           |                                                       |
     |                           |-- 9. Displays Certified Certificate (QR, Print PDF) -->|
 ```
-This sequential design separates heavy asset payloads (which remain safely distributed in the **Walrus blobstore**) from security proofs (which are immutable and signed on the **Sui Blockchain**).
+This sequential design separates heavy asset payloads (which remain safely distributed in the Walrus blobstore) from security proofs (which are immutable and signed on the Sui Blockchain).
