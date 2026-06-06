@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Manrope:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700;850&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-manrope: "Manrope", "Inter", sans-serif;
+  --font-signature: "Dancing Script", cursive;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+@layer utilities {
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+}
+
+/* Custom premium holographic & scanning visual keyframes */
+@keyframes scan {
+  0% {
+    top: 0%;
+  }
+  50% {
+    top: 100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 200%;
+  }
+}
+
+/* Applied helper animations classes */
+@layer utilities {
+  .animate-scan {
+    animation: scan 6s infinite ease-in-out;
+  }
+  
+  .animate-shimmer {
+    animation: shimmer 3s infinite linear;
+  }
+}
+
+/* Custom layout transforms matching 3D projection boxes */
+.rotate-Y-180 {
+  transform: rotateY(180deg);
+}
+
+.rotate-X-90 {
+  transform: rotateX(90deg);
+}
+
+.rotate-Y-90 {
+  transform: rotateY(90deg);
+}
+
+.rotate-x-60 {
+  transform: rotateX(60deg);
+}
+
+.translate-z-16 {
+  transform: translateZ(64px);
+}
+
+.-translate-z-16 {
+  transform: translateZ(-64px);
+}
+
+.opacity-gradient {
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+/* Optimize collectible print styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, footer, nav, button, select, input {
+    display: none !important;
+  }
+  #collectible-certificate-board {
+    border: 2px solid black !important;
+    box-shadow: none !important;
+    background: white !important;
+    color: black !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}

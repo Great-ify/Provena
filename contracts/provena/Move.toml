@@ -1,0 +1,9 @@
+[package]
+name = "Provena"
+edition = "2024.alpha" # Use modern Move edition
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet" }
+
+[addresses]
+provena = "0x0"

@@ -1,0 +1,10 @@
+{
+  "name": "PROVENA",
+  "description": "AI-era creator provenance and on-chain ownership infrastructure built on Sui and Walrus decentralized storage",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
