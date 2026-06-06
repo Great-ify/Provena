@@ -24,7 +24,7 @@ export default function UploadHeader({
         className="text-xs font-mono text-[#C7FF4D] uppercase tracking-widest font-extrabold"
         style={{ letterSpacing: '0.15em' }}
       >
-        PROVENA PROTOCOL MODULE
+       
       </motion.p>
       
       <motion.h1

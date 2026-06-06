@@ -15,7 +15,7 @@ export default function VerificationHeader() {
         transition={{ duration: 0.4 }}
         className="text-xs font-mono text-[#C7FF4D] uppercase tracking-[0.15em] block font-extrabold"
       >
-        Independent Attestation Keyway
+         Verification Portal
       </motion.span>
       
       <motion.h1 
@@ -24,7 +24,7 @@ export default function VerificationHeader() {
         transition={{ duration: 0.4, delay: 0.05 }}
         className="text-2xl md:text-3xl font-manrope font-bold text-[#F5F7FA] tracking-tight"
       >
-        Verification Portal
+       
       </motion.h1>
 
       <motion.p 
@@ -33,7 +33,7 @@ export default function VerificationHeader() {
         transition={{ duration: 0.5, delay: 0.1 }}
         className="text-xs text-[#98A2B3] font-manrope max-w-xl font-medium"
       >
-        Verify the authenticity of any work by querying decentralized mainnet registers and Walrus blob indices.
+        Verify the authenticity of any work by querying registers and Walrus blob indices.
       </motion.p>
     </div>
   );

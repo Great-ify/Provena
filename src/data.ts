@@ -224,7 +224,7 @@ module provena::provenance {
 export const SAMPLE_SIMILARITY_REPORT = {
   text: `**PROVENA DEEP COGNITIVE AI PLAGIARISM METADATA REPORT**
   
-This is a standard simulated cognitive scan of your resource. It uses a high-density stylistic analysis and spatial alignment checking logic to cross-reference multiple corpora.
+This is a standard simulated cognitive scan of our resource. It uses a high-density stylistic analysis and spatial alignment checking logic to cross-reference multiple corpora.
 
 ### Stylistic & Vector Resonance
 - **Stylistic Authenticity Score**: **96%** (Extremely strong signal matching human creation characteristics)

@@ -135,14 +135,7 @@ export default function Topbar({
       {activeTab !== 'certificate' ? (
         <div className="flex flex-col items-start text-left">
           {/* Breadcrumb line */}
-          <div className="flex items-center gap-1.5 text-[9px] font-mono text-[#555E6B] font-bold uppercase tracking-wider">
-            {pageInfo.breadcrumb.map((crumb, idx) => (
-              <React.Fragment key={idx}>
-                <span>{crumb}</span>
-                {idx < pageInfo.breadcrumb.length - 1 && <span className="text-[#262B36]">&gt;</span>}
-              </React.Fragment>
-            ))}
-          </div>
+       
           
           {/* Page Title & Sub */}
           <div className="flex items-baseline gap-2 mt-0.5">
@@ -250,9 +243,10 @@ export default function Topbar({
 
           {/* Notifications Dropdown Panel */}
           {showNotifications && (
-            <div className="absolute right-0 mt-2.5 w-80 bg-[#10131A] border border-[#262B36] rounded-xl shadow-2xl p-4 z-50 text-left flex flex-col max-h-[420px] overflow-hidden">
+            <div className="absolute right-0 mt-2.5 w-80 bg-[#10131A] border border-[#262B36] rounded-xl shadow-2xl p-4 z-50 text-left flex flex-col max-h-[420px] overflow-hidden sm:none
+  ">
               <div className="flex items-center justify-between border-b border-[#262B36]/30 pb-2 mb-2">
-                <span className="font-sans font-bold text-xs text-[#F5F7FA]">Forensic Events Audit</span>
+                <span className="font-sans font-bold text-xs text-[#F5F7FA]">Notifications</span>
                 <span className="text-[9px] bg-[#C7FF4D]/10 text-[#C7FF4D] px-2 py-0.5 rounded font-mono font-bold">
                   {unreadCount} Unread
                 </span>
@@ -288,10 +282,10 @@ export default function Topbar({
                   <div className="py-8 text-center space-y-2">
                     <Check className="w-8 h-8 text-[#555E6B] mx-auto opacity-40" />
                     <p className="text-[10px] font-mono text-[#555E6B] uppercase tracking-wide font-black">
-                      EVENT LOGS STABLE
+                      EVENT LOGS 
                     </p>
                     <p className="text-[10px] text-[#98A2B3] max-w-[200px] mx-auto leading-relaxed">
-                      Sui ledger synchronization is nominal. No alerts generated.
+                       No alerts.
                     </p>
                   </div>
                 ) : (

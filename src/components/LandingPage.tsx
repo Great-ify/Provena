@@ -159,7 +159,7 @@ export default function LandingPage({
           {/* Brand Prefix Badge */}
           <div className="inline-flex items-center gap-2 bg-[#161A22] border border-[#262B36] rounded-full px-3 py-1 text-xs select-none">
             <span className="w-2 h-2 rounded-full bg-[#C7FF4D] animate-ping" />
-            <span className="text-[10px] text-[#98A2B3] font-mono uppercase tracking-[0.2em] font-semibold">Platform Live V2.0</span>
+            <span className="text-[10px] text-[#98A2B3] font-mono uppercase tracking-[0.2em] font-semibold">Platform Live V1.0</span>
           </div>
 
           {/* Main Stacking Typography aligned to reference image but with our content constraint */}
@@ -170,7 +170,7 @@ export default function LandingPage({
               <span className="text-[#C7FF4D] drop-shadow-[0_0_35px_rgba(199,255,77,0.18)]">Prosper.</span>
             </h1>
             <p className="text-[#98A2B3] text-sm md:text-base max-w-lg font-sans leading-relaxed pt-2">
-              The AI-era provenance & ownership layer for creators. Built on Sui + Walrus. Lock your intellectual work, verify originality, and resist algorithmic data harvesting with absolute permanence.
+              The Provenance & ownership layer for creators. Built on Sui + Walrus. Lock your intellectual work, verify originality, and resist algorithmic data harvesting with absolute permanence.
             </p>
           </div>
 
@@ -189,7 +189,7 @@ export default function LandingPage({
               className="bg-[#161A22] hover:bg-[#1C212D] text-[#F5F7FA] border border-[#262B36] hover:border-[#C7FF4D]/40 font-sans font-semibold text-xs py-4 px-8 rounded-full transition-all duration-300 active:scale-95 cursor-pointer"
               id="hero-explore-marketplace"
             >
-              {walletConnected ? "Open Dashboard" : "Explore Marketplace"}
+              {walletConnected ? "Open App" : "Explore Marketplace"}
             </button>
           </div>
 
@@ -212,7 +212,7 @@ export default function LandingPage({
                   ))}
                 </div>
                 <div className="text-left select-none">
-                  <span className="text-xs text-[#F5F7FA] font-bold block">+ 10K+ Creators</span>
+                  <span className="text-xs text-[#F5F7FA] font-bold block"> Creators</span>
                 </div>
               </div>
             </div>

@@ -98,8 +98,8 @@ export default function CertificateRegistry({ assets, onSelectAsset, networkName
       {/* Header and Controls Row */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#262B36]/30 pb-5">
         <div>
-          <h2 className="text-xl font-display font-black text-[#F5F7FA] tracking-tight">Sovereign Registry Archive</h2>
-          <p className="text-xs font-mono text-[#98A2B3] uppercase tracking-wider mt-1">Immutable credential deeds matching network: Sui {networkName}</p>
+          <h2 className="text-xl font-display font-black text-[#F5F7FA] tracking-tight">Certificates Archive</h2>
+          <p className="text-xs font-mono text-[#98A2B3] uppercase tracking-wider mt-1"> Network: Sui {networkName}</p>
         </div>
 
         {/* Search, Sort, Stats Panel */}

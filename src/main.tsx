@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createNetworkConfig, SuiClientProvider, WalletProvider } from '@mysten/dapp-kit';
@@ -12,7 +7,6 @@ import { WalletContextProvider } from './context/WalletContext';
 import { BlockchainContextProvider } from './context/BlockchainContext';
 import { NotificationContextProvider } from './context/NotificationContext';
 import App from './App.tsx';
-
 import './index.css';
 
 // Configure standard RPC node endpoints directly with the required network property

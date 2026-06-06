@@ -233,13 +233,13 @@ export default function SettingsView({ userAddress: propAddress, suiBalance: pro
       {/* Title & Banner area */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#262B36]/30 pb-6">
         <div>
-          <h2 className="text-xl font-display font-black text-[#F5F7FA] tracking-tight">Consensus Desk Settings</h2>
+          <h2 className="text-xl font-display font-black text-[#F5F7FA] tracking-tight">Settings</h2>
           <p className="text-xs font-mono text-[#98A2B3] uppercase tracking-wider mt-1">Sovereign identity, storage monitoring, and metadata configurations</p>
         </div>
         {saveBanner && (
           <div className="bg-[#C7FF4D]/10 border border-[#C7FF4D]/30 text-[#C7FF4D] text-[10px] font-mono uppercase font-bold py-1.5 px-3 rounded-md flex items-center gap-1.5 self-start sm:self-center animate-pulse">
             <Check className="w-3.5 h-3.5" />
-            Operational Parameters Saved!
+             Saved!
           </div>
         )}
       </div>
@@ -505,7 +505,7 @@ export default function SettingsView({ userAddress: propAddress, suiBalance: pro
       <div className="bg-[#10131A] border border-[#262B36] rounded-xl p-5 space-y-6 text-left animate-fadeIn" id="storage-analytics-panel">
         <div className="flex items-center gap-2 border-b border-[#262B36]/50 pb-3">
           <Database className="w-4 h-4 text-[#C7FF4D]" />
-          <h3 className="text-xs font-mono uppercase font-black text-[#F5F7FA] tracking-wider">Storage Analytics & Decentralized Quotas</h3>
+          <h3 className="text-xs font-mono uppercase font-black text-[#F5F7FA] tracking-wider">Storage Analytics &  Quotas</h3>
         </div>
 
         {/* Bento Grid layout representing the various storage analytical elements */}
@@ -563,7 +563,7 @@ export default function SettingsView({ userAddress: propAddress, suiBalance: pro
             <div className="flex justify-between items-baseline text-[10px] font-mono">
               <span className="text-[#98A2B3] font-bold uppercase tracking-wider flex items-center gap-1.5">
                 <HardDrive className="w-3.5 h-3.5 text-[#C7FF4D]" />
-                Walrus Storage Segment Quota
+                Walrus Storage Quota
               </span>
               <span className="text-[#C7FF4D] font-black">{storageUsedPercent.toFixed(2)}% Used</span>
             </div>

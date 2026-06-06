@@ -71,7 +71,7 @@ export default function WalletDropdown({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.95 }}
             transition={{ duration: 0.15, ease: "easeOut" }}
-            className="absolute right-0 mt-2 w-full max-w-[280px] bg-[#10131A] border border-[#262B36] rounded-2xl shadow-2xl p-4 z-50 text-left overflow-hidden sm:right-0"
+            className="absolute right-0 mt-2 w-full max-w-[280px] bg-[#10131A] border border-[#262B36] rounded-2xl shadow-2xl p-4 z-50 text-left overflow-hidden sm:right-0 sm:w-3xl"
             id="wallet-menu-dropdown-box"
           >
             {/* Net connection & Wallet Title header */}
